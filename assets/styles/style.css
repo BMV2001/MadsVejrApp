@@ -1,0 +1,19 @@
+body {
+    background-color: darkred;
+}
+h1 {
+    color: antiquewhite;
+    font-style: oblique;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+}
+
+a {
+    font-weight: bolder;
+    color: black;
+}
+
+p{
+    color: yellowgreen;
+    font-size: large;
+}

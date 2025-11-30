@@ -4,7 +4,7 @@ use reqwest::get;
 
 //----------------------------Async-weather-API-calls-done-here!------------------------------------
 //In order for system to work, create a file called "apikey.txt" and locate it in the src folder.
-//The txt file should also include an an API key associated with you, handed out by the danish DMI weather stations website
+//The txt file should also include an API key associated with you, handed out by the danish DMI weather stations website
 pub async fn getLowestTemp() -> (f32, [f32; 2]){
     let apiKey = fs::read_to_string("src/apikey.txt").unwrap();
     let request = format!("https://dmigw.govcloud.dk/v2/metObs/collections/observation/items?limit=200&bbox=7,54,16,58&parameterId=temp_min_past1h&api-key={}", apiKey.trim());
